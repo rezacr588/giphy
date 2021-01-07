@@ -4,7 +4,6 @@ import Layout from "../wrappers/Layout";
 import { Button, Grid, Paper, TextField } from "@material-ui/core";
 import { Pagination } from "@material-ui/lab";
 import { useFormik } from "formik";
-import { Ring } from "react-awesome-spinners";
 const apiKey = "Q1zMo06wlIP9f8uNtHciLrFq2F7eWt4b";
 
 const Giphy: React.FC = () => {
@@ -64,7 +63,7 @@ const Giphy: React.FC = () => {
           />
         </>
       ) : (
-        <Ring />
+        <>Loading</>
       )}
     </Layout>
   );
